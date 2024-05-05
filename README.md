@@ -1,5 +1,3 @@
-# Dice Assessment
-
 <div>
 <h1>Spring Boot Weather API Integration</h1>
     <p>This project utilizes Spring Boot to create a server that integrates the <a href="https://openweathermap.org/api">OpenWeatherMap API</a>. It exposes RESTful APIs to retrieve weather forecast and summary data for any city.</p>
