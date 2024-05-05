@@ -7,8 +7,8 @@
     <p>Implement header-based authentication for accessing two weather forecast APIs to retrieve weather forecast summary and hourly details for any city.</p>
     <h2>API Endpoints</h2>
     <ul>
-        <li><strong>API 1:</strong> Get the Weather forecast summary of any city.</li>
         <p>Authentication: Header-based authentication with random client id and client secret is included in both api's</p>
+        <li><strong>API 1:</strong> Get the Weather forecast summary of any city.</li>
         <ul>
             <li>Endpoint: <code>https://spring-boot-backend-api-production.up.railway.app/weather/summary/:city</code></li>
             <li>Method: GET</li>
