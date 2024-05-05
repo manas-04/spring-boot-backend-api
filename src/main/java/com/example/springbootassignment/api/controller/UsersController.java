@@ -57,16 +57,17 @@ public class UsersController {
             Boolean isVerified = Users.doesPasswordMatch(user, existingUser.getPassword());
 
             if (isVerified) {
-                logger.info("working 1");
                 String token = this.jwtHelper.generateToken(existingUser);
                 UserAuthResponse response = new UserAuthResponse(token, user.getUserName());
                 return new ResponseEntity<>(response, HttpStatus.OK);
             } else {
-                throw new Exception("Not a Valid User" +  user.toString());
+                String errorMessage = "User verification failed";
+                logger.error(errorMessage);
+                throw new IllegalArgumentException(errorMessage);
             }
         } catch (Exception e) {
             logger.info(Arrays.toString(e.getStackTrace()));
-            return ResponseEntity.internalServerError().build();
+            return ResponseEntity.internalServerError().body(new ErrorResponse("An error occurred"));
         }
     }
 
