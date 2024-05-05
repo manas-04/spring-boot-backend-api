@@ -19,7 +19,7 @@
             <li>Method: GET</li>
         </ul>
     </ul>
-    <p>For Postman Collection Link - <a href="https://drive.google.com/file/d/1vD6_XNclNECF-dV8so3Vk3HVp7sNk1Cq/view?usp=sharing">Click Here</a></p>
+    <p>For Postman Collection Link - <a href="https://drive.google.com/file/d/1dKdYeAZy2SpSSsy-YJ6cRdTNwl6yxgA4/view?usp=sharing">Click Here</a></p>
     <br/>
     <p>In addition to this task, I created login, signup api's as well wherein I used JWT and postgreSQL as well, For this I created a postgreSQL Database on my machine and used it to store the users data.</p>
     <p>Code related to these api's is present in the branch <a href="https://github.com/manas-04/spring-boot-backend-api/tree/postgreSQL-integration">postgreSQL-integration</a></p>
